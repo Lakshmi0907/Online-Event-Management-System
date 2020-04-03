@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+.img1{
+width:400px;
+height:400px;
+border-radius:30px;
+}
+.button1 {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <title>Carousel Gallery Slider</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+<h1 style="color:white;font-family:fantasy;background-color:crimson;text-align:center;font-size:90px"><img src="logo2.jpg" style="width:100px;height:100px;border-radius:30%">Celebrate Your Event</h1>
+
+<br>
+<br>
+<div class="navbar">
+<div class="dropdown">
+    <button class="dropbtn"><a href="index7.html" class="a1">Admin</a>
+      
+    </button>
+     
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn"><a href="regform.php" class="a1" target="_blank">Signin/Signup</a>
+      
+    </button>
+     
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn"><a href="contact.html" class="a1">Contact Us</a>
+    </button>
+     
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn"><a href="contactus.html" class="a1">About</a>
+      
+    </button>
+</div>
+<div class="dropdown">
+    <button class="dropbtn" type="button"><a href="service.html" class="a1" target="_blank">Service</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="events.html">Venue</a>
+      <a href="#">Decoration</a>
+      <a href="#">Photography</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn"><a href="event1.html" class="a1">Events</a>
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="event.html">Birth Day party</a>
+      <a href="events.html">Wedding</a>
+      <a href="events.html">Anniversary</a>
+      
+    </div>
+</div>
+   <div class="dropdown">
+     
+    <button class="dropbtn"><a href="index.html" class="a1">Home</a>
+      
+    </button>
+</div>
+
+
+
+
+
+</div> 
+</div>
+<br>
+<br>
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="img2.jpg">1366X768
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+        <div class="imageHolder">
+            <img src="img3.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+        <div class="imageHolder">
+            <img src="img1.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+        <div class="imageHolder">
+            <img src="celebrate.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="celebration1.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="wedding1.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="marriage1.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="wedding2.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="f1.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="img5.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="marriage2.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+	<div class="imageHolder">
+            <img src="wedding4.jpg">
+            <p class="captionText">Your Celebration Begings Here</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<br>
+<br>
+<h1 style="font-size:40px;font-family:fantasy;text-align:center;color:crimson">Events</h1>
+<table  cellpadding="30" align="center" style="border-collapse: collapse;cell-padding:20px">
+<tr>
+<td>
+<figure>
+<img class="img1" src="celebrate1.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">wedding</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="suprise2.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Suprise Party</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class ="img1" src="birth.jxr"><br><br>
+<figcaption style="text-align:center;font-size:20px">Birthday</figcaption>
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+<figure>
+<img class="img1" src="success.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Success Party</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="college1.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">College Events</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="anni.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Anniversary</figcaption>
+</figure>
+</td>
+</tr>
+</table>
+<h1 style="font-size:40px;font-family:fantasy;text-align:center;color:crimson">Services</h1>
+<table  cellpadding="30" align="center" style="border-collapse: collapse;cell-padding:20px">
+<tr>
+<td>
+<figure>
+<img class="img1" src="hotels1.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Venue</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="decorate.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Decoration</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class ="img1" src="catering1.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Catering</figcaption>
+</figure>
+</td>
+</tr>
+<tr>
+<td>
+<figure>
+<img class="img1" src="stageartist.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Stage Artist</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="bb.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Band Baza</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+<img class="img1" src="pandits.jpg"><br><br>
+<figcaption style="text-align:center;font-size:20px">Pandits</figcaption>
+</figure>
+</td>
+</tr>
+</table>
+<h1 style="font-size:40px;font-family:fantasy;text-align:center;color:crimson">Founder</h1>
+<table cellpadding="30" align="center" style="border-collapese:collapsed">
+<tr>
+<td>
+<img class="img1" src="founder1.jpg" width=200 height=200>
+</td>
+<td>
+<p style="font-family:fantasy;font-size:30px">
+Shashank is mostly referred as Man Of Actions. He is a great Enthusiast and a strong believer in practical learning and taking initiatives.<br>
+ Since school days and even in college he took up the roles of managing the events. 
+<br>Networking, talking with people and discussing ideas is his core hobby, he look forward to provide quick solutions, evaluating the available options, integrating the resources and put team to work together well. Always ready to take up leadership roles. Uday is also associated as Ambassador with Vadodara based Individual Development Centre- Yuvalay from past 2 years; he works for day to day promotion, marketing & general administration and management activities. He has completed B Com from the M. S. University Baroda and a PG Diploma in Corporate Social Responsibility from the same University.
+</p>
+</td>
+</tr>
+</table>
+<center>
+<a href="comment.php" class="button1">FEEDBACK</a>
+</center>
+<br><br><br><br>
+<div class="contact">
+		<div class="info">
+			
+			<div class="address">
+				<p><hr> Celebrate Your Event<br>
+					Ongole,Andhra Pradesh<br>523226.</p>
+                       
+			</div>
+                        
+                        <i class="fa fa-home" aria-hidden="true">HOME</i>
+			<i class="fa fa-phone" aria-hidden="true"> (0863)2244171</i>
+			<i class="fa fa-envelope" aria-hidden="true"><a href="#">Admin@oems.in</a></i>
+			<i class="fa fa-globe" aria-hidden="true"><a href="http://www.rvrjcce.ac.in/">oems.in</a></i>
+		</div>
+      <ul style="position : absolute;top : 60%;left :30%;"><a href="#" style=>Terms of Use</a> 
+          <a href="#">Copyright Complaints</a>
+        </ul> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15321.420183081194!2d80.3220854!3d16.2535638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a76e740000001%3A0xc41c8498715c6da0!2sStudent!5e0!3m2!1sen!2sin!4v1543765739210" frameborder="0" class="map" allowfullscreen></iframe>
+      <i class="fa fa-youtube-play" style="position: absolute; top:70% ; left:85% ;font-size:50px; color: white;"></i>
+        <i class="fa fa-facebook-square" style="position: absolute; top:70% ; left:90% ;font-size:50px; color: white;"></i>	
+         <i class="fa fa-instagram" style="position: absolute; top:70% ; left:80% ;font-size:50px; color: white;"></i>
+         <i class="fa fa-twitter" style="position: absolute; top:70% ; left:75% ;font-size:50px; color: white;"></i>
+</div>
+<script src="myScript.js"></script>
+</body>
+</html>

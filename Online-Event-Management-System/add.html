@@ -1,0 +1,45 @@
+<?php
+$conn=mysqli_connect("localhost","root","","phplearning");
+$sql="select *from bookedevent";
+$result=mysqli_query($conn,$sql);
+$rows=mysqli_num_rows($result);
+?>
+<html>
+<head>
+<style>
+.button {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body style="background-image:url('img4.jpg');background-repeat:no-repeat;background-size: 100% 100%;">
+
+<h2 style="text-align:center;color:blue;font-family:fantasy;font-size:70px">ADMIN</h2>
+<BR>
+<BR>
+<a href="#" class="button">DASHBOARD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<br>
+<a href="addevent.html" class="button">ADD EVENTS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<br>
+<a href="addservice.html" class="button">ADD SERVICE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<br>
+<a href="addcoor.html" class="button">ADD CO-ORDINATORS&nbsp&nbsp</a>
+<br>
+<a href="addservice.html" class="button">ADD VOLUNTEERS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<br>
+<a href="abstract.php" class="button">UPDATED EVENTS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<center>
+<a href="booked.php" class="button">BOOKED EVENTS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<p>$roes</p>
+</center>
+</body>
+</html>

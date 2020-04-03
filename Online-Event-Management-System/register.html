@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Registration form</title>
+ <style>
+  body
+ {
+  background-image:url("rbi.jpg");
+  background-repeat:no-repeat;
+  background-size:1500px 800px;
+  margin-left:30px;
+  }
+  pre
+ {
+  font-size:20px;
+ }
+  h1{
+  margin-left:100px;
+  font-style:italic;
+  }
+  #bt1{
+   height:35px;
+   width:100px;
+   background-color:#3366ff;
+   font-size:15px;
+   border-radius:5px;
+   }
+ </style>
+</head>
+ <body>
+  <h1>Registration Form</h1>
+  <pre>
+  <form method="post" action="database.php">
+   <label>    Name <input type="text" name="name" size="50" placeholder="enter name" required></label><br><br>
+   <label>Email Id <input type="email" name="email" size="40" placeholder="uname@gmail.com" required></label><br><br>
+   <label>Password <input type="password" name="password" size="20" required></label><br><br>
+   <label> Address <textarea type="text" name="address" size="50" required></textarea></label><br><br>
+     <input type="submit" value="Register" id="bt1">
+<a href="regform.php">already a member</a>
+ </form>
+ </pre>
+ </body>
+</html>
